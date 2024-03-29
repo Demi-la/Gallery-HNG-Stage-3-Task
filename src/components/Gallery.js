@@ -55,8 +55,8 @@ const Gallery = ({
                   <Image
                     src={image.urls.regular}
                     alt={image.alt_description}
-                    width={'20rem'}
-                    height={'10rem'}
+                    width={'25rem'}
+                    height={{base:"15rem", lg:'20rem'}}
                     _hover={{
                       filter: 'blur(2px)',
                       cursor: 'grab',

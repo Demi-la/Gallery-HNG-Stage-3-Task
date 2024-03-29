@@ -6,7 +6,7 @@ import Login from './Login';
 import axios from 'axios';
 
 const API_URL = 'https://api.unsplash.com/search/photos';
-const IMAGES_PER_PAGE = 12;
+const IMAGES_PER_PAGE = 20;
 
 const Home = () => {
   const [galleryImages, setGalleryImages] = useState([]);
@@ -29,7 +29,7 @@ const Home = () => {
     const getGalleryImages = async () => {
       try {
         const response = await fetch(
-          `https://api.unsplash.com/photos?page=${page}&per_page=12&client_id=${process.env.REACT_APP_API_KEY}`
+          `https://api.unsplash.com/photos?page=${page}&per_page=20&client_id=${process.env.REACT_APP_API_KEY}`
         );
 
         const data = await response.json();
